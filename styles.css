@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Roboto', sans-serif, serif;
 }
@@ -13,15 +8,57 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 500px;
-  height: 600px;
+  width: 600px;
+  height: 650px;
   border: 1px solid black;
-  padding: 0;
 }
 
 #header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
   background-color: #6A96D7;
   display: flex;
   justify-content: space-between;
 }
 
+#content {
+  position: relative;
+  top: 20%;
+  height: 80%;
+}
+
+.row {
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.row .row-left {
+  
+}
+
+.row.row-right {
+  align-items: flex-end;
+  margin: 0 20px 10px 0;
+  background-color: #C0C0C0;
+  text-align: end;
+}
+
+.user-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.user-input input {
+  width: 70%;
+  float: left;
+} 
+
+.user-input button {
+  float: right;
+}
