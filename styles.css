@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif, serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -34,7 +34,8 @@ body {
 
 .chat-name {
   font-size: 1.5rem;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 15px;
+  font-weight: 600;
 }
 
 #bullet {
