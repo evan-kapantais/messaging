@@ -1,15 +1,16 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #ACC2D6;
 }
 
 .container {
   position: absolute;
-  /* top: 50%;
+  background-color: #fff;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); */
-  width: 600px;
-  height: 650px;
-  border: 1px solid black;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 600px;
 }
 
 #header {
@@ -55,35 +56,89 @@ body {
   height: 80%;
 }
 
+.time-stamp h5 {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 1px solid #ccc; 
+  line-height: .1em;
+  margin: 10px 0 20px; 
+}
+
+.time-stamp span {
+  background:#fff; 
+  padding:0 10px;
+  color: #ccc;
+  font-size: 1rem;
+}
+
 .row {
-  border: 1px solid black;
+  padding: 0 20px;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
 }
 
-.row .row-left {
-  
+.row-left {
+  float: left;
+  padding: 0 20px;
+  max-width: 70%;
 }
 
-.row.row-right {
-  align-items: flex-end;
-  margin: 0 20px 10px 0;
-  background-color: #C0C0C0;
-  text-align: end;
+.row-right {
+  width: 70%;
+  float: right;
+  text-align: right;
+  max-width: 70%;
+}
+
+.time {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.p-left {
+  background-color: #ACC2D6;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.p-right {
+  background-color: #ccc;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.p-blocked {
+  background-color: salmon;
+  padding: 10px 10px;
+  border-radius: 5px;
 }
 
 .user-input {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 5px 10px;
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+}
+
+.user-input form {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.user-input form input {
+  border: none;
 }
 
 .user-input input {
-  width: 70%;
-  float: left;
+  width: 80%;
+  /* float: left; */
 } 
 
 .user-input button {
-  float: right;
+  /* float: right; */
+  font-weight: 600;
+  color: #6A96D7;
 }
